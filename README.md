@@ -12,23 +12,23 @@ You can find bianchi's paper in this link: https://pdfs.semanticscholar.org/4a5c
 
 Implementation: 
 
-Ns-3 simulation code file: ee597project.cc
+Ns-3 simulation code file: ns3simu.cc
 OS: Ubuntu 18.04
 NS-3 edition: 3.29
 
 No need to edit source file.
 
 Configuration options:
--nWifi: number of stations, default to be 10. You can configure it by type on terminal: ./waf --run "scrach/ee597proj --nWifi=20"
--cwmin: number of minimum contention window, default to be 31. You can configure it by type on terminal: ./waf --run "scrach/ee597proj --cwmin=31"
--cwmax: number of maximum contention window, default to be 255. You can configure it by type on terminal: ./waf --run "scrach/ee597proj --cwmax=255"
+-nWifi: number of stations, default to be 10. You can configure it by type on terminal: ./waf --run "scrach/ns3simu --nWifi=20"
+-cwmin: number of minimum contention window, default to be 31. You can configure it by type on terminal: ./waf --run "scrach/ns3simu --cwmin=31"
+-cwmax: number of maximum contention window, default to be 255. You can configure it by type on terminal: ./waf --run "scrach/ns3simu --cwmax=255"
 
-For example, you can type ./waf --run "scratch/ee597proj --nWifi=30 --cwmin=31 --cwmax=255" 
+For example, you can type ./waf --run "scratch/ns3simu --nWifi=30 --cwmin=31 --cwmax=255" 
 
 Output: For each station, the program should output the throughput monitored by flow monitor, total throughput and stations number and contention window size.
 
 >>Matlab simulation
 Tools: Matlab 2017
-Matlab files: ee597project1.m, ee597project2.m
+Matlab files: matlabsimu1.m, matlabsimu2.m
 
 Output: The simulation file will output a plot which contains both three situation of W and m, which is 1)W=32 m=3; 2)W=32 m=5; 3)W=128 m=3.
